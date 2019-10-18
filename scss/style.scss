@@ -1,0 +1,78 @@
+$Color: #d4e636;
+$mainFont: Helvetica;
+
+* {
+    font-family: $mainFont;
+}
+
+#main {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.searchArea {
+    margin-bottom: 1vw;
+}
+
+.output {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    width: 50%;
+    grid-gap: 1vw;
+}
+
+.output > div {
+    padding: 1vw;
+}
+
+.city {
+    background: url(https://www.ya-roditel.ru/bitrix/templates/rastem-vmeste/images/examples/header-slide001.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+
+.temperature {
+    background: url(https://izplitki.com/wp-content/uploads/2016/12/630_360_1448962003-6431-klimat-pogoda-gradusnik.jpg);    
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+
+.sun {
+    display: flex;
+    background: url(https://techcrunch.com/wp-content/uploads/2015/10/shutterstock_112249904.jpg?w=730&crop=1);
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wind {
+    background: $Color;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/3/span 2/span 1;
+}
+
+.rain {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyUm-jkh_NA3VPClfUbx0q4WNaCBOj_AZ-KegLWQ8j09P84RlK);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
