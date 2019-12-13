@@ -5,8 +5,10 @@ const errorSource = document.getElementById('errorTemplate').innerHTML;
 const errorTemplate = Handlebars.compile(errorSource);
 
 getWeather = async (event) => {
+    //console.log(event.target[0].value);
     event.preventDefault();
     response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${event.target[0].value}&appid=${tokenAPI}`);
+    console.log(response);
     const previousMarkup = document.getElementById('output');
     if (previousMarkup) {
       previousMarkup.remove();
@@ -15,6 +17,7 @@ getWeather = async (event) => {
     if (errMarkup) {
       errMarkup.remove();
     }
+    console.log(response.ok);
     if (response.ok){ 
       const data = await response.json();
       render({
@@ -30,8 +33,6 @@ getWeather = async (event) => {
       render({errorMsg: response.status});
     }
 }
-
-
 
 render=(data)=>{
   const main = document.getElementById('main');
@@ -49,3 +50,6 @@ render=(data)=>{
 }
 
 document.getElementById('inputForm').addEventListener('submit', getWeather);
+
+exports.getWeather = getWeather;
+exports.render = render
