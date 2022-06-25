@@ -21,7 +21,7 @@
     "jest": "^24.9.0",
     "jest-fetch-mock": "^2.1.2",
     "mocha": "^6.2.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "node-sass": "^4.12.0",
     "sass": "^1.23.0",
     "sinon": "^7.5.0"
