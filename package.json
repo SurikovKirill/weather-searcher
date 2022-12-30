@@ -20,7 +20,7 @@
     "fetch": "^1.1.0",
     "jest": "^24.9.0",
     "jest-fetch-mock": "^2.1.2",
-    "mocha": "^6.2.2",
+    "mocha": "^10.2.0",
     "node-fetch": "^2.6.0",
     "node-sass": "^4.12.0",
     "sass": "^1.23.0",
